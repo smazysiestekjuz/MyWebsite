@@ -15,32 +15,6 @@ body {
   padding-top: 1px;
   padding-bottom: 20px;
 }
-
-
-.showcase::after {
-  content: '';
-  height: 100vh;
-  width: 100%;
-  background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  transition: all 1000ms;
-}
-
-.showcase:hover::after {
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-}
-
-.showcase:hover .content {
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-}
-
 .content {
   position: absolute;
   z-index: 1;
@@ -52,57 +26,6 @@ body {
   height: 350px;
   text-align: center;
   transition: all 1000ms;
-}
-
-.content .title {
-  font-size: 2.2rem;
-  margin-top: 10rem;
-}
-
-.content .text {
-  line-height: 1.7;
-  margin-top: 1rem;
-}
-
-.container {
-  max-width: 1160px;
-  margin: auto;
-  padding: 1rem 1rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-2 {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.center {
-  text-align: center;
-  margin: auto;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #333;
-  color: #f4f4f4;
-}
-
-footer {
-  padding: 2.2rem;
-}
-
-footer p {
-  margin: 0;
 }
 
 /* Small Screens */
@@ -123,11 +46,6 @@ footer p {
 
   .content .text {
     display: none;
-  }
-
-  .grid-3,
-  .grid-2 {
-    grid-template-columns: 1fr;
   }
 
   .services div {
@@ -173,16 +91,6 @@ h1 {
 	font-size: 60px;
 	line-height: 1.2;
 	margin-bottom: 15px;
-}
-
-.show {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: #fff;
-	padding: 0 20px;
 }
 
 .video-container {
